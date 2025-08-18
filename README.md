@@ -80,7 +80,7 @@ In `task_1/main.ts`:
 
 1. Clone this repository:
    ```bash
-   git clone 
+   git clone https://github.com/Peter-Adjao/frontend-javascript.git
    cd project-root
 
 cd task_0
