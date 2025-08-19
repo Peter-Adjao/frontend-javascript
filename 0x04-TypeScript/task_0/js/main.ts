@@ -20,7 +20,7 @@ const student2: Student = {
 };
 
 //step 2 create an array with two students
-const studentList: Student[] =[student1, student2];
+const studentsList: Student[] =[student1, student2];
 
 //Step 3: Create the table element
 const table = document.createElement("table");
@@ -34,17 +34,17 @@ headerName.textContent = "FirstName";
 header.appendChild(headerName);
 
 // step 4 Loop through studentList and add rows
-studentList.forEach(student =>{
+studentsList.forEach(Student =>{
     const row = document.createElement("tr");
 
     //First name cell
     const nameCell = document.createElement("td");
-    nameCell.textContent = student.firstName;
+    nameCell.textContent = Student.firstName;
     row.appendChild(nameCell);
 
     //loction cell;
     const locationCell = document.createElement("td");
-    locationCell.textContent = student.location;
+    locationCell.textContent = Student.location;
     row.appendChild(locationCell);
 
     // Add row to the table
