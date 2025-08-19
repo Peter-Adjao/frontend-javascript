@@ -1,26 +1,26 @@
-   interface student {
+   interface Student {
     firstName: string;
     lastName: string;
     location: string;
-    Age: number;
+    age: number;
 }
 // Step 1 Define two students
 
-const student1: student = {
+const student1: Student = {
     firstName: "Kojo",
     location: "Ghana",
     lastName: "",
-    Age: 0
+    age: 0
 };
-const student2: student = {
+const student2: Student = {
     firstName: "Ama",
     location: "Ghana",
     lastName: "",
-    Age: 0
+    age: 0
 };
 
 //step 2 create an array with two students
-const studentList: student[] =[student1, student2];
+const studentList: Student[] =[student1, student2];
 
 //Step 3: Create the table element
 const table = document.createElement("table");
