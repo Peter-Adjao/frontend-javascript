@@ -1,16 +1,22 @@
-export interface student {
+   interface student {
     firstName: string;
+    lastName: string;
     location: string;
+    Age: number;
 }
 // Step 1 Define two students
 
 const student1: student = {
     firstName: "Kojo",
     location: "Ghana",
+    lastName: "",
+    Age: 0
 };
 const student2: student = {
     firstName: "Ama",
-    location: "Ghana"
+    location: "Ghana",
+    lastName: "",
+    Age: 0
 };
 
 //step 2 create an array with two students
