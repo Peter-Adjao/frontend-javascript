@@ -1,0 +1,48 @@
+export interface student {
+    firstName: string;
+    location: string;
+}
+// Step 1 Define two students
+
+const student1: student = {
+    firstName: "Kojo",
+    location: "Ghana",
+};
+const student2: student = {
+    firstName: "Ama",
+    location: "Ghana"
+};
+
+//step 2 create an array with two students
+const studentList: student[] =[student1, student2];
+
+//Step 3: Create the table element
+const table = document.createElement("table");
+table.border = "1"; //Adds border for visibility
+
+// Add header row
+const header: HTMLTableRowElement = document.createElement("tr");
+
+const headerName:  HTMLTableCellElement = document.createElement("th");
+headerName.textContent = "FirstName";
+header.appendChild(headerName);
+
+// step 4 Loop through studentList and add rows
+studentList.forEach(student =>{
+    const row = document.createElement("tr");
+
+    //First name cell
+    const nameCell = document.createElement("td");
+    nameCell.textContent = student.firstName;
+    row.appendChild(nameCell);
+
+    //loction cell;
+    const locationCell = document.createElement("td");
+    locationCell.textContent = student.location;
+    row.appendChild(locationCell);
+
+    // Add row to the table
+    table.appendChild(row); 
+});
+
+document.body.appendChild(table);
