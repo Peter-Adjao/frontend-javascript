@@ -13,7 +13,7 @@ namespace Subjects {
         }
         
 
-        getAvailableteacher():string {
+        getAvailableTeacher():string {
             if (!this.teacher.experienceTeachingJava) {
                 return "No available teacher";
             }
